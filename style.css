@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Oswald", sans-serif;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.food {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.card {
+  margin: 20px;
+  width: 18rem;
+}
+
+.food-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#food-detail img {
+  text-align: center;
+  border-radius: 20px;
+}
+
+#food-detail {
+  display: flex;
+  color: white;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: tomato;
+  padding: 40px;
+  width: 600px;
+  border-radius: 20px;
+}
+
+#searchResult {
+  display: none;
+}
+
+.card {
+  cursor: pointer;
+}
