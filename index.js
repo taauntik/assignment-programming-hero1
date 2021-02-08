@@ -2,8 +2,8 @@ const foodMenu = document.getElementById("food-menu");
 const foodDetail = document.getElementById("food-detail");
 const searchBar = document.getElementById("search-bar");
 const searchBtn = document.getElementById("searchBtn");
-const card = document.querySelector(".card");
 
+// add an event listener into the search Button and call the api
 searchBtn.addEventListener("click", () => {
   fetch(
     `https://www.themealdb.com/api/json/v1/1/search.php?s=${searchBar.value}`
@@ -19,7 +19,6 @@ searchBtn.addEventListener("click", () => {
 });
 
 const displayCategories = (categories) => {
-  console.log(categories);
   foodMenu.innerHTML = "";
   categories.forEach((food) => {
     const foodItem = document.createElement("div");
